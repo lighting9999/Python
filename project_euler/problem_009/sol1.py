@@ -15,7 +15,7 @@ Find the product a*b*c.
 References:
     - https://en.wikipedia.org/wiki/Pythagorean_triple
 """
-
+import timeit
 
 def solution() -> int:
     """
@@ -63,7 +63,7 @@ def benchmark() -> None:
     """
     Benchmark code comparing two different version function.
     """
-    import timeit
+    
 
     print(
         timeit.timeit("solution()", setup="from __main__ import solution", number=1000)
