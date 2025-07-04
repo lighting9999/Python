@@ -91,11 +91,10 @@ True
 
 from __future__ import annotations
 
-
 from collections.abc import Iterable, Iterator
 from dataclasses import dataclass
-from pprint import pformat
 from typing import Any, Self
+
 
 @dataclass
 class Node:
@@ -116,6 +115,7 @@ class Node:
         yield from self.right or []
 
     def __repr__(self) -> str:
+        from pprint import pformat
 
         if self.left is None and self.right is None:
             return str(self.value)
