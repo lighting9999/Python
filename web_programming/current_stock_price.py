@@ -1,6 +1,8 @@
+from doctest import testmod
+
 import requests
 from bs4 import BeautifulSoup
-from doctest import testmod
+
 
 """
 Get the HTML code of finance yahoo and select the current qsp-price
